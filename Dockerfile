@@ -7,7 +7,7 @@ RUN mkdir -p $CONFIG_SERVER_HOME
 WORKDIR $CONFIG_SERVER_HOME
 ADD target/configserver-1.0.jar configserver.jar
 
-EXPOSE 10000
+EXPOSE 20000
 ENTRYPOINT ["java", "-jar", "configserver.jar"]
 CMD ["profile"]
 
