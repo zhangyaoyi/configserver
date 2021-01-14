@@ -6,9 +6,24 @@ spring:
       server:
         git:
           uri: https://github.com/zhangyaoyi/config-repo.git
+  rabbitmq:
+    host: sz-zone1-3
+    port: 5672
+    username: guest
+    password: guest
 
 server:
   port: 20000
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
 
 eureka:
   client:
